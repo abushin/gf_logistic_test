@@ -11,9 +11,11 @@ use Illuminate\Support\Facades\Event;
 
 class DeliveryDelivered extends Event
 {
-    use Dispatchable, SerializesModels;
+    use Dispatchable;
+    use SerializesModels;
 
     public function __construct(protected Delivery $delivery)
     {
+        // todo ...
     }
 }
